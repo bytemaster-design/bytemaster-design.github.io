@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title (главный заголовок в поиске) -->
+    <title>bytemaster | Дизайн для блогеров: превью, аватарки, оформление</title>
+    
+    <!-- Description (описание под заголовком в поиске) -->
+    <meta name="description" content="Дизайн для блогеров и стримеров: превью для видео, аватарки, баннеры, оформление YouTube, Twitch, VK, Telegram. Более 200 отзывов, 5 лет опыта. Заказать дизайн.">
+    
+    <!-- Keywords (ключевые слова) -->
+    <meta name="keywords" content="превью для видео, заказать превью для видео, дизайн превью, аватарка для YouTube, заказать аватарку, дизайн аватарок, оформление канала, дизайн для блогеров, оформление YouTube, оформление Twitch, оформление VK, баннер для канала, bytemaster">
+    
+    <!-- Author -->
+    <meta name="author" content="bytemaster">
+    
+    <!-- Robots (индексировать всё) -->
+    <meta name="robots" content="index, follow">
+    
+    <link rel="stylesheet" href="style/style.css">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+<body>
+     <!-- фон с частицами -->
+        <div class="particles-bg" id="particlesBg">
+        <div class="layer-1" id="layer1"></div>
+        <div class="layer-2" id="layer2"></div>
+        <div class="layer-3" id="layer3"></div>
+    </div>
+    <div class="container">
+        <!-- шапка мини -->
+        <div class="header">
+            <div class="logo">bytemaster<span>.</span></div>
+            <a href="https://funpay.com/users/9956864/" class="fanpay-badge">FanPay →</a>
+        </div>
+
+        <!-- профиль + быстрая инфа -->
+        <div class="profile-row">
+            <div class="avatar">
+                <img src="images/avatar.jpg" alt="bytemaster">
+            </div>
+            <div class="profile-info">
+                <h1>bytemaster</h1>
+                <div class="handle">Дизайн</div>
+                <div class="stats-mini">
+                    <div><span>5 лет</span> опыта</div>
+                    <div><span>≈200</span> отзывов</div>
+                    <div><span>5.0</span> ★</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- био строка с кнопкой действия -->
+        <div class="bio">
+            <p>Хороший дизайн работает на вас. Он привлекает подписчиков, удерживает внимание и выделяет среди конкурентов. Не оставляйте визуал на потом — это инвестиция в рост вашего канала.</p>
+            <a href="https://funpay.com/users/9956864/" class="bio-button">Заказать дизайн</a>
+        </div>
+
+        <!-- платформы тегами 
+        <div class="platform-mini">
+            <span>YouTube</span>
+            <span>VK</span>
+            <span>Telegram</span>
+            <span>Twitch</span>
+            <span>Discord</span>
+            <span>игры</span>
+        </div>-->
+
+        <!-- категории -->
+        <div class="categories-header">
+            <h2>Портфолио</h2>
+            <span>выбери категорию</span>
+        </div>
+
+        <div class="category-grid" id="categoryButtons"></div>
+
+        <!-- работы -->
+        <div class="works-section" id="worksSection" style="display: none;">
+            <div class="works-header">
+                <h3 id="currentCategoryTitle">Аватарки</h3>
+                <span class="works-count" id="worksCount">0 работ</span>
+            </div>
+            <div class="works-grid" id="worksGrid"></div>
+            
+            <!-- КНОПКА В КАТЕГОРИИ (под сеткой) -->
+            <div class="category-fanpay-button" id="categoryFanpayButton" style="display: none;">
+                <a href="https://funpay.com/users/9956864/" class="category-fanpay-link">Заказать дизайн на FanPay →</a>
+            </div>
+        </div>
+
+        <!-- футер -->
+        <div class="footer">
+            <span>bytemaster · дизайн</span>
+            <!-- <span>FanPay 5.0 · ≈200 отзывов</span> -->
+        </div>
+    </div>
+
+    <!-- модалка -->
+    <div class="modal" id="imageModal">
+        <span class="modal-close" id="closeModal">&times;</span>
+        <div class="modal-image-wrapper">
+            <img class="modal-content" id="modalImage">
+        </div>
+        <a href="https://funpay.com/users/9956864/" class="modal-order-btn" id="modalOrderBtn">Заказать на FanPay →</a>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
