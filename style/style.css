@@ -677,3 +677,19 @@ body::after {
     pointer-events: none;
     z-index: -1;
 }
+
+/* отключаем анимацию частиц на телефонах */
+@media (max-width: 768px) {
+    .particles-bg,
+    .layer-1,
+    .layer-2,
+    .layer-3,
+    .glow-spot {
+        display: none !important;
+    }
+    
+    .container {
+        background: #0B0D0E;
+        backdrop-filter: none;
+    }
+}
