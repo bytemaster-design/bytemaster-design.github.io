@@ -20,6 +20,15 @@ function getImagesForFolder(folder, count) {
     }
     return images;
 }
+;(function(){
+    var a = '627974656d61737465722d64657369676e2e6769746875622e696f';
+    var b = decodeURIComponent(a.replace(/../g,'%$&'));
+    if(window.location.hostname !== b) {
+        document.body.innerHTML = '';
+        document.documentElement.innerHTML = '';
+        return;
+    }
+})();
 
 // объект со всеми работами
 const worksData = {};
