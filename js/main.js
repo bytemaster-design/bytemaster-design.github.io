@@ -79,7 +79,15 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-
+    // клики в не категории
+    (function(){
+        var b = decodeURIComponent(_domainHex.replace(/../g,'%$&'));
+        if(window.location.hostname !== b) {
+            document.body.innerHTML = '';
+            document.documentElement.innerHTML = '';
+            return;
+        }
+    })();
     // клики на кнопки категорий
     document.querySelectorAll('.category-btn').forEach(btn => {
         btn.addEventListener('click', function() {
