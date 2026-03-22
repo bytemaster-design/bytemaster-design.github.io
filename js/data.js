@@ -1,6 +1,6 @@
 // данные о категориях
 const categories = [
-    { id: 'previews', name: 'Превью для видео', folder: 'previews', count: 7, ratio: 'video' },
+    { id: 'previews', name: 'Превью для видео', folder: 'previews', count: 8, ratio: 'video' },
     { id: 'avatars', name: 'Аватарки', folder: 'avatars', count: 2, ratio: 'square' },
 
     // { id: 'vk', name: 'Оформление ВК', folder: 'vk', count: 0, ratio: 'square' },
