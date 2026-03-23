@@ -240,3 +240,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // запускаем создание частиц
     createParticles();
+// Таймер до конца марта
+function updateTimer() {
+    const now = new Date();
+    const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59);
+    const diff = endOfMonth - now;
+    
+    if (diff <= 0) {
+        document.getElementById('timer').innerText = 'акция завершена';
+        return;
+    }
+    
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    document.getElementById('timer').innerText = `${days} дн ${hours} ч`;
+}
+
+setInterval(updateTimer, 60000);
+updateTimer();
