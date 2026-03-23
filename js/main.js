@@ -38,10 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // МЕНЯЕМ КЛАСС СЕТКИ В ЗАВИСИМОСТИ ОТ ТИПА КАТЕГОРИИ
         if (category.ratio === 'video') {
             worksGrid.classList.add('grid-video');
-            worksGrid.classList.remove('grid-square');
+            worksGrid.classList.remove('grid-square', 'grid-banner');
+        } else if (category.ratio === 'banner') {
+            worksGrid.classList.add('grid-banner');
+            worksGrid.classList.remove('grid-square', 'grid-video');
         } else {
             worksGrid.classList.add('grid-square');
-            worksGrid.classList.remove('grid-video');
+            worksGrid.classList.remove('grid-video', 'grid-banner');
         }
 
         if (works.length === 0) {
