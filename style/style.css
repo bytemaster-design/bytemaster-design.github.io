@@ -800,3 +800,14 @@ body::after {
         display: none;
     }
 }
+/* сетка для баннеров (шапок) */
+.works-grid.grid-banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.works-grid.grid-banner .work-item {
+    width: 100%;
+    aspect-ratio: 16 / 5;
+}
