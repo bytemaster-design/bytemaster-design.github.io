@@ -19,7 +19,7 @@ function getImagesForFolder(folder, count) {
     }
     return images;
 }
-
+ 
 // объект со всеми работами
 const worksData = {};
 var _domainHex = '627974656d61737465722d64657369676e2e6769746875622e696f';
