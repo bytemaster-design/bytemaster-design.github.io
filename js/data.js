@@ -2,7 +2,7 @@
 const categories = [
     { id: 'previews', name: 'Превью для видео', folder: 'previews', count: 9, ratio: 'video' },
     { id: 'youtube', name: 'Шапки YouTube', folder: 'youtube', count: 1, ratio: 'banner' },
-    { id: 'avatars', name: 'Аватарки', folder: 'avatars', count: 3, ratio: 'square' },
+    { id: 'avatars', name: 'Аватарки', folder: 'avatars', count: 6, ratio: 'square' },
     // { id: 'vk', name: 'Оформление ВК', folder: 'vk', count: 0, ratio: 'square' },
     // { id: 'twitch', name: 'Оформление Twitch', folder: 'twitch', count: 0, ratio: 'square' },
     { id: 'telegram', name: 'Оформление Telegram', folder: 'telegram', count: 2, ratio: 'square' },
