@@ -11,7 +11,7 @@ const categories = [
 // генерация массива изображений
 function getImagesForFolder(folder, count) {
     const images = [];
-    for (let i = 1; i <= count; i++) {
+    for (let i = count; i >= 1; i--) { 
         images.push({
             src: `images/${folder}/work-${i}.jpg`,
             alt: `${folder} work ${i}`
