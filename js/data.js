@@ -1,7 +1,7 @@
 // данные о категориях
 const categories = [
-    { id: 'previews', name: 'Превью для видео', folder: 'previews', count: 9, ratio: 'video' },
     { id: 'youtube', name: 'Шапки YouTube', folder: 'youtube', count: 2, ratio: 'banner' },
+    { id: 'previews', name: 'Превью для видео', folder: 'previews', count: 9, ratio: 'video' },
     { id: 'avatars', name: 'Аватарки', folder: 'avatars', count: 7, ratio: 'square' },
     // { id: 'vk', name: 'Оформление ВК', folder: 'vk', count: 0, ratio: 'square' },
     // { id: 'twitch', name: 'Оформление Twitch', folder: 'twitch', count: 0, ratio: 'square' },
